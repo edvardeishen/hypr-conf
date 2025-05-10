@@ -50,7 +50,7 @@
 #waybar {
     background: #323232;
     color: white;
-    font-family: Cantarell, Noto Sans, sans-serif;
+    font-family: Cantarell, Noto Sans, "Font Awesome 6 Free Solid";
     font-size: 13px;
 }
 
@@ -60,6 +60,7 @@
 #cpu,
 #language,
 #memory,
+#disk,
 #mode,
 #network,
 #pulseaudio,
