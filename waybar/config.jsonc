@@ -88,7 +88,8 @@
     "format": " {}",
     "format-en": "EN",
     "format-ru": "RU",
-    "keyboard-name": "sonix-xtrfy-k4"
+    "keyboard-name": "sonix-xtrfy-k4",
+    "on-click": "hyprctl switchxkblayout sonix-xtrfy-k4 next"
     },
 
     "memory": {
@@ -150,7 +151,7 @@
             "car": "",
             "default": ["", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pkill pavucontrol || pavucontrol"
     },
 
     "temperature": {
@@ -174,7 +175,7 @@
 
     "custom/power": {
         "format": "",
-        "on-click": "wlogout",
+        "on-click": "wlogout -b 2",
         "tooltip-format": "Log Out"
     }
 
