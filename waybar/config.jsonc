@@ -47,6 +47,7 @@
     "disk": {
         "interval": 30,
         "format": " {percentage_used}%",
+        "tooltip-format": "{used} used",
         "path": "/"
     },
 
@@ -93,11 +94,12 @@
     },
 
     "hyprland/language": {
-    "format": " {}",
-    "format-en": "EN",
-    "format-ru": "RU",
-    "keyboard-name": "sonix-xtrfy-k4",
-    "on-click": "hyprctl switchxkblayout sonix-xtrfy-k4 next"
+        "format": " {}",
+        "format-en": "EN",
+        "format-ru": "RU",
+        "tooltip-format": "{long}",
+        "keyboard-name": "sonix-xtrfy-k4",
+        "on-click": "hyprctl switchxkblayout sonix-xtrfy-k4 next"
     },
 
     "memory": {
