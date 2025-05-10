@@ -114,7 +114,7 @@
         "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
         "format-ethernet": "  {ifname}", // Icon: ethernet
         "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ipaddr}"
+        "tooltip-format": "{ipaddr} - {bandwidthUpBytes}"
     },
 
     "hyprland/window": {
