@@ -151,7 +151,7 @@
             "car": "",
             "default": ["", ""]
         },
-        "on-click": "pkill pavucontrol || pavucontrol"
+        "on-click": "pkill pavucontrol || pavucontrol -t 3"
     },
 
     "temperature": {
