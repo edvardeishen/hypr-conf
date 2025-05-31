@@ -185,7 +185,7 @@
 
     "custom/power": {
         "format": "",
-        "on-click": "wlogout -b 2",
+        "on-click": "wlogout",
         "tooltip-format": "Log Out"
     }
 
