@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+declare -i y=0
+
+waybar=$(diff -q ~/.config/waybar/ ~/hypr-conf/waybar/)
+hypr=$(diff -q ~/.config/hypr/ ~/hypr-conf/hypr/)
+kitty=$(diff -q ~/.config/kitty/ ~/hypr-conf/kitty/)
+
+
+
+if [[ $waybar ]]; then
+    echo "waybar differ";
+    cp -r ~/.config/waybar ~/hypr-conf/;
+    echo "waybar copied";
+    y+=1;
+else
+    echo "waybar not differ";
+fi
+
+if [[ $hypr ]]; then
+    echo "hyprland differ";
+    cp -r ~/.config/hypr ~/hypr-conf/;
+    echo "hyprland copied";
+    y+=1;
+else
+    echo "hyprland not differ";
+fi
+
+if [[ $kitty ]]; then
+    echo "kitty differ";
+    cp -r ~/.config/kitty ~/hypr-conf/;
+    echo "kitty copied";
+    y+=1;
+else
+    echo "kitty not differ";
+fi
+
+echo "$y"
+
+if (( y > 0 )); then
+    cd ~/hypr-conf/ && git add .;
+    echo "GIT ADDED";
+    cd ~/hypr-conf/ && git commit -m "A";
+    echo "\"A\" commit ADDED";
+else
+    echo "Nothing to add and commit";
+fi
+
+echo "END!"
